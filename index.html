@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nordplayer - Modern Music Experience</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="assets/logo.svg" alt="Nordplayer Logo" />
+                    <span>Nordplayer</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li>
+                        <a
+                            href="https://github.com/jpangestu/nordplayer"
+                            target="_blank"
+                            title="GitHub"
+                        >
+                            <span class="icon-mask icon-github"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://discord.gg/RH5j8H2Y"
+                            target="_blank"
+                            title="Discord"
+                        >
+                            <span class="icon-mask icon-discord"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <section class="container">
+                <div class="hero">
+                    <div class="hero-text">
+                        <h1>Your Local Collection, Fully Personalized</h1>
+                        <p>
+                            Experience your music in a modern, beautiful
+                            interface with Nordplayer. Designed for those who
+                            value aesthetics and total control over their local
+                            library.
+                        </p>
+                        <div class="cta-group">
+                            <a href="#download" class="btn btn-primary"
+                                >Download Now</a
+                            >
+                            <a href="#features" class="btn btn-secondary"
+                                >Learn More</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <img
+                            src="assets/main_preview.png"
+                            class="hero-img"
+                            alt="Nordplayer Interface"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- THEME VARIANTS -->
+            <section class="theme-variants">
+                <div class="container">
+                    <h2 class="section-title">Choose Your Vibe</h2>
+                    <div class="variants-grid">
+                        <!-- STATIC -->
+                        <div class="variant-item">
+                            <div class="variant-text">
+                                <h3>Static Presets</h3>
+                                <p>
+                                    Choose from curated color schemes like Nord,
+                                    Nord Light, or Graphite. Perfect for those
+                                    who want a consistent and focused look.
+                                </p>
+                            </div>
+                            <div class="image-stack stack-rf">
+                                <div class="stack-card">
+                                    <img src="assets/static-theme3.png" />
+                                </div>
+                                <div class="stack-card">
+                                    <img src="assets/static-theme2.png" />
+                                </div>
+                                <div class="stack-card">
+                                    <img src="assets/static-theme1.png" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ADAPTIVE -->
+                        <div class="variant-item">
+                            <div class="variant-text">
+                                <h3>Adaptive Colors</h3>
+                                <p>
+                                    Let the player breathe with your music.
+                                    Colors are extracted from album art to
+                                    create a unique atmosphere for every track.
+                                </p>
+                            </div>
+                            <div class="image-stack stack-lf">
+                                <div class="stack-card">
+                                    <img src="assets/adaptive-theme1.png" />
+                                </div>
+                                <div class="stack-card">
+                                    <img src="assets/adaptive-theme2.png" />
+                                </div>
+                                <div class="stack-card">
+                                    <img src="assets/adaptive-theme3.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEATURES -->
+            <section id="features" class="features">
+                <div class="container">
+                    <div class="feature-row reverse">
+                        <div class="feature-text">
+                            <h3>Adaptive Background</h3>
+                            <p>
+                                The interface dynamically adapts to the color of
+                                your album art, creating a fully immersive and
+                                unified listening experience. Every album feels
+                                like its own world.
+                            </p>
+                        </div>
+                        <div class="feature-visual">
+                            <div class="image-stack stack-rf">
+                                <div class="stack-card">
+                                    <img src="assets/adaptive-bg4.png" />
+                                </div>
+                                <div class="stack-card">
+                                    <img src="assets/adaptive-bg3.png" />
+                                </div>
+                                <div class="stack-card">
+                                    <img src="assets/adaptive-bg2.png" />
+                                </div>
+                                <div class="stack-card">
+                                    <img src="assets/adaptive-bg1.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TECHNICAL FEATURES -->
+            <section class="tech-features">
+                <div class="container">
+                    <h2 class="section-title">Studio Quality Playback</h2>
+                    <div class="glow-grid">
+                        <div
+                            class="glow-card"
+                            style="--glow-color: var(--nord8)"
+                        >
+                            <h3>Lossless Masters</h3>
+                            <p>
+                                Native support for <strong>FLAC</strong> and
+                                <strong>ALAC</strong> up to 24-bit/192kHz.
+                                Experience your music exactly as it was
+                                recorded.
+                            </p>
+                        </div>
+                        <div
+                            class="glow-card"
+                            style="--glow-color: var(--nord7)"
+                        >
+                            <h3>The mpv Core</h3>
+                            <p>
+                                Powered by <strong>libmpv</strong>. If it's an
+                                audio file, Nordplayer can play it. No codecs to
+                                install, no setup required.
+                            </p>
+                        </div>
+                        <div
+                            class="glow-card"
+                            style="--glow-color: var(--nord9)"
+                        >
+                            <h3>Local & Offline</h3>
+                            <p>
+                                No accounts, no cloud sync, no tracking. A
+                                completely offline music player designed
+                                strictly for your local library, keeping your
+                                listening private.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- REDESIGNED DOWNLOAD SECTION -->
+            <section id="download" class="download-section">
+                <div class="container">
+                    <h2>Ready to play?</h2>
+
+                    <div class="download-card">
+                        <div class="download-title">Downloads</div>
+
+                        <div class="download-selector">
+                            <div
+                                id="btn-linux"
+                                class="download-os-btn active"
+                                onclick="setOS('linux')"
+                            >
+                                <span class="icon-mask icon-linux"></span>
+                                <span>Linux</span>
+                            </div>
+                            <div
+                                id="btn-windows"
+                                class="download-os-btn"
+                                onclick="setOS('windows')"
+                            >
+                                <span class="icon-mask icon-windows"></span>
+                                <span>Windows</span>
+                            </div>
+                        </div>
+
+                        <div class="download-content-wrap">
+                            <div id="linux-pane" class="download-pane active">
+                                <h3
+                                    style="
+                                        font-size: 1.25rem;
+                                        color: var(--nord8);
+                                        margin-bottom: 1.5rem;
+                                    "
+                                >
+                                    Arch-based distribution
+                                </h3>
+                                <p
+                                    style="
+                                        font-size: 1rem;
+                                        color: var(--nord4);
+                                        margin-bottom: 1.5rem;
+                                    "
+                                >
+                                    Run the following command in your terminal:
+                                </p>
+
+                                <div class="terminal-minimal">
+                                    <div class="terminal-code">
+                                        <span class="terminal-prompt">$</span>
+                                        <code
+                                            ><span
+                                                id="auto-text"
+                                                class="command-fade"
+                                                >yay</span
+                                            >
+                                            -S nordplayer-bin</code
+                                        >
+                                    </div>
+                                    <button
+                                        class="terminal-copy"
+                                        onclick="copyAuto()"
+                                        title="Copy current code"
+                                    >
+                                        <span
+                                            class="icon-mask icon-copy"
+                                        ></span>
+                                    </button>
+                                </div>
+
+                                <div class="download-footer-info">
+                                    Other Linux? Grab the latest pre-compiled
+                                    archive from the
+                                    <a
+                                        href="https://github.com/jpangestu/nordplayer/releases"
+                                        target="_blank"
+                                        style="
+                                            color: var(--nord8);
+                                            text-decoration: underline;
+                                            font-weight: 700;
+                                        "
+                                        >GitHub Releases</a
+                                    >
+                                    page.
+                                </div>
+                            </div>
+
+                            <div id="windows-pane" class="download-pane">
+                                <h3
+                                    style="
+                                        font-size: 1.25rem;
+                                        color: var(--nord8);
+                                        margin-bottom: 1.5rem;
+                                    "
+                                >
+                                    Standard Installer
+                                </h3>
+                                <p
+                                    style="
+                                        font-size: 1rem;
+                                        color: var(--nord4);
+                                        margin-bottom: 2rem;
+                                    "
+                                >
+                                    For Windows 10 and 11 (64-bit).
+                                </p>
+                                <a
+                                    href="https://github.com/jpangestu/nordplayer/releases"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                    style="width: 100%; padding: 1rem"
+                                >
+                                    Download .exe for Windows
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ SECTION -->
+            <section id="faq" class="faq-section">
+                <div class="container">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                Is Nordplayer free?
+                                <span class="icon-plus"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    Yes, Nordplayer is completely free and it's
+                                    open-source. You can check out the source
+                                    code on GitHub.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                Has Nordplayer reached a stable release yet?
+                                <span class="icon-plus"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    Nordplayer is currently in active
+                                    development. A lot of the planned feature
+                                    stil hasn't been implemented yet. But for
+                                    basic music playing usage, you can use it
+                                    already.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-links">
+                        <a href="#features">Features</a>
+                        <a href="#download">Download</a>
+                    </div>
+
+                    <a href="#" class="logo">
+                        <img src="assets/logo.svg" alt="Nordplayer Logo" />
+                        <span>Nordplayer</span>
+                    </a>
+
+                    <div class="footer-links" style="justify-content: flex-end">
+                        <a
+                            href="https://github.com/jpangestu/nordplayer"
+                            target="_blank"
+                            title="GitHub"
+                        >
+                            <span class="icon-mask icon-github"></span>
+                            <span style="margin-left: 8px">GitHub</span>
+                        </a>
+                        <a
+                            href="https://discord.gg/RH5j8H2Y"
+                            target="_blank"
+                            title="Discord"
+                        >
+                            <span class="icon-mask icon-discord"></span>
+                            <span style="margin-left: 8px">Discord</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <span>&copy; 2026</span>
+                    <span>&bull;</span>
+                    <span
+                        >Made with
+                        <a href="https://flutter.dev" target="_blank"
+                            >Flutter</a
+                        ></span
+                    >
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const textElem = document.getElementById("auto-text");
+            const commands = ["yay", "paru"];
+            let idx = 0;
+
+            if (textElem) {
+                setInterval(() => {
+                    textElem.classList.add("fade-out");
+                    setTimeout(() => {
+                        idx = (idx + 1) % commands.length;
+                        textElem.textContent = commands[idx];
+                        textElem.classList.remove("fade-out");
+                    }, 400);
+                }, 3000);
+            }
+
+            function copyAuto() {
+                const cmd = commands[idx] + " -S nordplayer-bin";
+                navigator.clipboard.writeText(cmd);
+                alert("Copied to clipboard!");
+            }
+
+            function setOS(os) {
+                document
+                    .getElementById("btn-linux")
+                    .classList.toggle("active", os === "linux");
+                document
+                    .getElementById("btn-windows")
+                    .classList.toggle("active", os === "windows");
+                document
+                    .getElementById("linux-pane")
+                    .classList.toggle("active", os === "linux");
+                document
+                    .getElementById("windows-pane")
+                    .classList.toggle("active", os === "windows");
+            }
+
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    const target = document.querySelector(
+                        this.getAttribute("href"),
+                    );
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            });
+
+            // FAQ Accordion Toggle
+            document.querySelectorAll(".accordion-header").forEach((button) => {
+                button.addEventListener("click", () => {
+                    const accordionItem = button.parentElement;
+                    accordionItem.classList.toggle("active");
+                });
+            });
+        </script>
+    </body>
+</html>
