@@ -485,7 +485,7 @@ body {
     display: none;
 }
 .download-pane.active {
-    display: block;
+    display: flex;
     animation: fadeIn 0.4s ease;
 }
 
@@ -703,6 +703,13 @@ body {
     border-color: var(--nord8);
     color: var(--nord8);
     transform: translateY(-2px);
+}
+
+.btn-disabled {
+    background: var(--nord3);
+    color: var(--nord4);
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .icon-mask {

@@ -231,7 +231,11 @@
                         </div>
 
                         <div class="download-content-wrap">
-                            <div id="linux-pane" class="download-pane active">
+                            <div
+                                id="linux-pane"
+                                class="download-pane active"
+                                style="flex-direction: column"
+                            >
                                 <h3
                                     style="
                                         font-size: 1.25rem;
@@ -291,33 +295,28 @@
                                 </div>
                             </div>
 
-                            <div id="windows-pane" class="download-pane">
-                                <h3
-                                    style="
-                                        font-size: 1.25rem;
-                                        color: var(--nord8);
-                                        margin-bottom: 1.5rem;
-                                    "
-                                >
-                                    Standard Installer
-                                </h3>
-                                <p
+                            <div
+                                id="windows-pane"
+                                class="download-pane"
+                                style="
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    min-height: 250px;
+                                "
+                            >
+                                <span
                                     style="
                                         font-size: 1rem;
                                         color: var(--nord4);
-                                        margin-bottom: 2rem;
+                                        font-weight: 600;
+                                        letter-spacing: 0.05em;
+                                        text-transform: uppercase;
+                                        opacity: 0.7;
                                     "
                                 >
-                                    For Windows 10 and 11 (64-bit).
-                                </p>
-                                <a
-                                    href="https://github.com/jpangestu/nordplayer/releases"
-                                    target="_blank"
-                                    class="btn btn-primary"
-                                    style="width: 100%; padding: 1rem"
-                                >
-                                    Download .exe for Windows
-                                </a>
+                                    Coming Soon
+                                </span>
                             </div>
                         </div>
                     </div>
