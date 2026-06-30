@@ -200,6 +200,11 @@
             <div class="container">
                 <h2>Ready to play?</h2>
 
+                <div style="background-color: rgba(235, 203, 139, 0.1); border: 1px solid rgba(235, 203, 139, 0.2); border-left: 4px solid #ebcb8b; border-radius: 8px; padding: 1rem 1.5rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto; text-align: left;">
+                    <strong style="color: #ebcb8b; font-size: 1.05rem; display: block; margin-bottom: 0.25rem;">⚠️ Pre-Release Software</strong>
+                    <p style="color: var(--nord4); margin: 0; font-size: 0.95rem;">Nordplayer is still in early development (alpha). The app is not completely stable and you may experience bugs or missing features.</p>
+                </div>
+
                 <div class="download-card">
                     <div class="download-title">Downloads</div>
 
@@ -264,16 +269,25 @@
                                     align-items: center;
                                     min-height: 250px;
                                 ">
-                            <span style="
+                            <h3 style="
+                                        font-size: 1.25rem;
+                                        color: var(--nord8);
+                                        margin-bottom: 1.5rem;
+                                    ">
+                                Windows Installer
+                            </h3>
+                            <p style="
                                         font-size: 1rem;
                                         color: var(--nord4);
-                                        font-weight: 600;
-                                        letter-spacing: 0.05em;
-                                        text-transform: uppercase;
-                                        opacity: 0.7;
+                                        margin-bottom: 2rem;
+                                        text-align: center;
                                     ">
-                                Coming Soon
-                            </span>
+                                Download and run the executable to install Nordplayer.
+                            </p>
+                            <a id="windows-download-btn" href="https://github.com/jpangestu/nordplayer/releases/latest"
+                                class="btn btn-primary" style="text-decoration: none;">
+                                Download .exe
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -410,6 +424,22 @@
                 accordionItem.classList.toggle("active");
             });
         });
+
+        // Fetch latest release for Windows
+        fetch("https://api.github.com/repos/jpangestu/nordplayer/releases/latest")
+            .then((response) => response.json())
+            .then((data) => {
+                if (data && data.assets) {
+                    const exeAsset = data.assets.find((asset) => asset.name.endsWith(".exe"));
+                    if (exeAsset) {
+                        const btn = document.getElementById("windows-download-btn");
+                        if (btn) {
+                            btn.href = exeAsset.browser_download_url;
+                        }
+                    }
+                }
+            })
+            .catch((err) => console.error("Error fetching latest release:", err));
     </script>
 </body>
 

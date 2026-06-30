@@ -155,6 +155,7 @@ body {
 .cta-group {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 /* =========================================
@@ -682,7 +683,9 @@ body {
     font-size: 0.95rem;
     cursor: pointer;
     transition: all 0.2s ease;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
 }
 
