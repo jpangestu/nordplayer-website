@@ -200,9 +200,13 @@
             <div class="container">
                 <h2>Ready to play?</h2>
 
-                <div style="background-color: rgba(235, 203, 139, 0.1); border: 1px solid rgba(235, 203, 139, 0.2); border-left: 4px solid #ebcb8b; border-radius: 8px; padding: 1rem 1.5rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto; text-align: left;">
-                    <strong style="color: #ebcb8b; font-size: 1.05rem; display: block; margin-bottom: 0.25rem;">⚠️ Pre-Release Software</strong>
-                    <p style="color: var(--nord4); margin: 0; font-size: 0.95rem;">Nordplayer is still in early development (alpha). The app is not completely stable and you may experience bugs or missing features.</p>
+                <div
+                    style="background-color: rgba(235, 203, 139, 0.1); border: 1px solid rgba(235, 203, 139, 0.2); border-left: 4px solid #ebcb8b; border-radius: 8px; padding: 1rem 1.5rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto; text-align: left;">
+                    <strong style="color: #ebcb8b; font-size: 1.05rem; display: block; margin-bottom: 0.25rem;">⚠️
+                        Pre-Release Software</strong>
+                    <p style="color: var(--nord4); margin: 0; font-size: 0.95rem;">Nordplayer is still in early
+                        development (alpha). The app is not completely stable and you may experience bugs or missing
+                        features.</p>
                 </div>
 
                 <div class="download-card">
@@ -220,74 +224,84 @@
                     </div>
 
                     <div class="download-content-wrap">
-                        <div id="linux-pane" class="download-pane active" style="flex-direction: column">
-                            <h3 style="
-                                        font-size: 1.25rem;
-                                        color: var(--nord8);
-                                        margin-bottom: 1.5rem;
-                                    ">
-                                Arch-based distribution
-                            </h3>
-                            <p style="
-                                        font-size: 1rem;
-                                        color: var(--nord4);
-                                        margin-bottom: 1.5rem;
-                                    ">
-                                Run the following command in your terminal:
-                            </p>
+                        <div id="linux-pane" class="download-pane active" style="flex-direction: column; gap: 1.5rem;">
+                            <div>
+                                <h3 style="
+                                            font-size: 1.25rem;
+                                            color: var(--nord8);
+                                            margin-bottom: 1.5rem;
+                                        ">
+                                    Arch-based distribution
+                                </h3>
+                                <p style="
+                                            font-size: 1rem;
+                                            color: var(--nord4);
+                                            margin-bottom: 1.5rem;
+                                        ">
+                                    Run the following command in your terminal:
+                                </p>
 
-                            <div class="terminal-minimal">
-                                <div class="terminal-code">
-                                    <span class="terminal-prompt">$</span>
-                                    <code><span
-                                                id="auto-text"
-                                                class="command-fade"
-                                                >yay</span
-                                            >
-                                            -S nordplayer-bin</code>
+                                <div class="terminal-minimal">
+                                    <div class="terminal-code">
+                                        <span class="terminal-prompt">$</span>
+                                        <code><span
+                                                    id="auto-text"
+                                                    class="command-fade"
+                                                    >yay</span
+                                                >
+                                                -S nordplayer-bin</code>
+                                    </div>
+                                    <button class="terminal-copy" onclick="copyAuto()" title="Copy current code">
+                                        <span class="icon-mask icon-copy"></span>
+                                    </button>
                                 </div>
-                                <button class="terminal-copy" onclick="copyAuto()" title="Copy current code">
-                                    <span class="icon-mask icon-copy"></span>
-                                </button>
                             </div>
 
-                            <div class="download-footer-info">
-                                Other Linux? Grab the latest pre-compiled
-                                archive from the
-                                <a href="https://github.com/jpangestu/nordplayer/releases" target="_blank" style="
+                            <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 1.0rem;">
+                                <h3 style="
+                                            font-size: 1.25rem;
                                             color: var(--nord8);
-                                            text-decoration: underline;
-                                            font-weight: 700;
-                                        ">GitHub Releases</a>
-                                page.
+                                            margin-bottom: 1.0rem;
+                                        ">
+                                    Universal AppImage
+                                </h3>
+                                <p style="
+                                            font-size: 1rem;
+                                            color: var(--nord4);
+                                            margin-bottom: 1.5rem;
+                                        ">
+                                    Download and run on any Linux distribution without installation.
+                                </p>
+                                <a id="linux-appimage-btn"
+                                    href="https://github.com/jpangestu/nordplayer/releases/latest"
+                                    class="btn btn-primary" style="text-decoration: none;">
+                                    Download .AppImage
+                                </a>
                             </div>
                         </div>
 
-                        <div id="windows-pane" class="download-pane" style="
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    align-items: center;
-                                    min-height: 250px;
-                                ">
-                            <h3 style="
-                                        font-size: 1.25rem;
-                                        color: var(--nord8);
-                                        margin-bottom: 1.5rem;
-                                    ">
-                                Windows Installer
-                            </h3>
-                            <p style="
-                                        font-size: 1rem;
-                                        color: var(--nord4);
-                                        margin-bottom: 2rem;
-                                        text-align: center;
-                                    ">
-                                Download and run the executable to install Nordplayer.
-                            </p>
-                            <a id="windows-download-btn" href="https://github.com/jpangestu/nordplayer/releases/latest"
-                                class="btn btn-primary" style="text-decoration: none;">
-                                Download .exe
-                            </a>
+                        <div id="windows-pane" class="download-pane" style="flex-direction: column;">
+                            <div>
+                                <h3 style="
+                                            font-size: 1.25rem;
+                                            color: var(--nord8);
+                                            margin-bottom: 1.5rem;
+                                        ">
+                                    Windows Installer
+                                </h3>
+                                <p style="
+                                            font-size: 1rem;
+                                            color: var(--nord4);
+                                            margin-bottom: 1.5rem;
+                                        ">
+                                    Download and run the executable to install Nordplayer.
+                                </p>
+                                <a id="windows-download-btn"
+                                    href="https://github.com/jpangestu/nordplayer/releases/latest"
+                                    class="btn btn-primary" style="text-decoration: none;">
+                                    Download .exe
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -425,7 +439,7 @@
             });
         });
 
-        // Fetch latest release for Windows
+        // Fetch latest release for Windows and Linux AppImage
         fetch("https://api.github.com/repos/jpangestu/nordplayer/releases/latest")
             .then((response) => response.json())
             .then((data) => {
@@ -435,6 +449,14 @@
                         const btn = document.getElementById("windows-download-btn");
                         if (btn) {
                             btn.href = exeAsset.browser_download_url;
+                        }
+                    }
+
+                    const appImageAsset = data.assets.find((asset) => asset.name.endsWith(".AppImage"));
+                    if (appImageAsset) {
+                        const btn = document.getElementById("linux-appimage-btn");
+                        if (btn) {
+                            btn.href = appImageAsset.browser_download_url;
                         }
                     }
                 }
